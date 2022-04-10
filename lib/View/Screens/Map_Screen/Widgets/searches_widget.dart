@@ -8,7 +8,8 @@ import '../../../../Utils/app_strings.dart';
 import '../../../Widgets/textField_white_widget.dart';
 
 class SearchesWidget extends StatelessWidget {
-  const SearchesWidget({Key? key}) : super(key: key);
+  const SearchesWidget({Key? key, required this.scaffoldKey}) : super(key: key);
+  final GlobalKey<ScaffoldState>? scaffoldKey;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +31,7 @@ class SearchesWidget extends StatelessWidget {
                   backgroundColor: Colors.white,
                   child: IconButton(
                     splashRadius: 25,
-                    onPressed: () {},
+                    onPressed: () => scaffoldKey!.currentState!.openDrawer(),
                     icon: const Icon(
                       Icons.menu_rounded,
                       color: Colors.black,

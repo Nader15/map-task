@@ -22,7 +22,7 @@ class AppRoutes {
     ),
     GetPage(
       name: Routes.mapScreen,
-      page: () => MapScreen(),
+      page: () =>  MapScreen(),
       binding: AuthBinding(),
     ),
     GetPage(

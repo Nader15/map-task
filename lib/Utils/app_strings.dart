@@ -7,5 +7,12 @@ class AppStrings {
   static const String DESTINATION_SCREEN_HINT = "Search destination here";
   static const String MAP_REQUEST_BUTTON = "REQUEST RD";
   static const String OK = "OK";
+  static const String TERMS = "Terms of Service";
+  static const String PRIVACY = "Privacy Policy";
+  static const String HELP = "Help & feedback";
+  static const String SETTINGS = "Settings";
+  static const String LOCATION_SHARING = "Location sharing";
+  static const String USER_NAME = "Nader Salah";
+  static const String USER_EMAIL = "nadersalah@gmail.com";
 
 }
