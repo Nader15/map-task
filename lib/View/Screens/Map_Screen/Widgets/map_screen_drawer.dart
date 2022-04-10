@@ -55,7 +55,7 @@ class MapScreenDrawer extends StatelessWidget {
                     ),
                     const Icon(Icons.circle, size: 5),
                     customTextButton(
-                      text: AppStrings.PRIVACY,
+                      text: AppStrings.TERMS,
                       function: () {},
                     ),
                   ],
@@ -71,6 +71,7 @@ class MapScreenDrawer extends StatelessWidget {
   TextButton customTextButton({String? text, Function? function}) {
     return TextButton(
       style: ButtonStyle(
+        textStyle: MaterialStateProperty.all(const TextStyle(fontSize: 12)),
         foregroundColor: MaterialStateProperty.all(
           AppColors.PRIMARY_COLOR,
         ),

@@ -14,5 +14,6 @@ class AppStrings {
   static const String LOCATION_SHARING = "Location sharing";
   static const String USER_NAME = "Nader Salah";
   static const String USER_EMAIL = "nadersalah@gmail.com";
+  static const String API_URL = "https://raw.githubusercontent.com/lutangar/cities.json/master/cities.json";
 
 }

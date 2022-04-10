@@ -1,7 +1,8 @@
 import 'package:get/get.dart';
-import 'package:map_task/Logic/controllers/map_controller.dart';
 
-class AuthBinding extends Bindings{
+import '../controllers/map_controller.dart';
+
+class MapBinding extends Bindings{
   @override
   void dependencies() {
     Get.put(MapController());

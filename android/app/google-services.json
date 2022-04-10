@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "130748119538",
+    "project_id": "map-test-a3809",
+    "storage_bucket": "map-test-a3809.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130748119538:android:459ce528825d8cbfed936b",
+        "android_client_info": {
+          "package_name": "com.nader.map_task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130748119538-qns1vfma9sd624a6lg8o1o6ne6fp4a75.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGTtDBhx-IQDo5GJ6veFAA5K8nh63ZLbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130748119538-qns1vfma9sd624a6lg8o1o6ne6fp4a75.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

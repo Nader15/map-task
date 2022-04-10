@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import 'dart:async';
 
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:map_task/Models/cities_model.dart';
+import 'package:map_task/Services/cities_services.dart';
 
 class MapController extends GetxController {
 
@@ -25,4 +27,5 @@ class MapController extends GetxController {
     super.onInit();
     update();
   }
+
 }
