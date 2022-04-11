@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:map_task/Logic/binding/location_binding.dart';
 import '../Logic/binding/destination_binding.dart';
 import '../Logic/binding/map_binding.dart';
 import '../View/Screens/DestinationSearch_Screen/destinationSearch_screen.dart';
@@ -27,8 +28,8 @@ class AppRoutes {
     ),
     GetPage(
       name: Routes.locationSearchScreen,
-      page: () => const LocationSearchScreen(),
-      binding: MapBinding(),
+      page: () => LocationSearchScreen(),
+      binding: LocationBinding(),
     ),
     GetPage(
       name: Routes.destinationSearchScreen,

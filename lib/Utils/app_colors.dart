@@ -8,4 +8,5 @@ class AppColors {
   static  Color GREY_SHADE_COLOR = Colors.grey.shade300;
   static const Color BLACK_COLOR = Colors.black;
   static const Color WHITE_COLOR = Colors.white;
+  static const Color RED_COLOR = Colors.red;
 }

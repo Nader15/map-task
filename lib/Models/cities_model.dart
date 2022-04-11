@@ -12,13 +12,13 @@ String citiesModelToJson(List<CitiesModel> data) =>
 
 class CitiesModel {
   CitiesModel({
-    required this.country,
+     this.country,
     required this.name,
     required this.lat,
     required this.lng,
   });
 
-  String country;
+  String? country;
   String name;
   String lat;
   String lng;

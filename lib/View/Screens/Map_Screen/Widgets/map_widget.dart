@@ -10,7 +10,11 @@ class MapWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return  GoogleMap(
       mapType: MapType.normal,
-      initialCameraPosition: mapController.kGooglePlex,
+      myLocationEnabled: true,
+      initialCameraPosition: CameraPosition(
+        target:mapController.center.value,
+        zoom: 14.4746,
+      ),
       onMapCreated: (GoogleMapController controller) {
         mapController.controller.complete(controller);
       },

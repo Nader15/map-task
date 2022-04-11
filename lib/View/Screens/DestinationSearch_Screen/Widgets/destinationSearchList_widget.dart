@@ -8,6 +8,7 @@ import '../../../../Utils/app_colors.dart';
 class DestinationSearchListWidget extends StatelessWidget {
   DestinationSearchListWidget({Key? key}) : super(key: key);
   final destinationController = Get.find<DestinationController>();
+  final mapController = Get.find<MapController>();
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +20,14 @@ class DestinationSearchListWidget extends StatelessWidget {
           shrinkWrap: true,
           physics: const BouncingScrollPhysics(),
           itemBuilder: (BuildContext context, index) {
+            final result = destinationController.citiesSearchResult[index];
             return ListTile(
-              onTap: () {},
+              onTap: () {
+                mapController.destinationSearchText.value = result.name;
+                mapController.destinationLng.value = result.lng;
+                mapController.destinationLat.value = result.lat;
+                Get.back();
+              },
               leading: CircleAvatar(
                 backgroundColor: AppColors.GREY_SHADE_COLOR,
                 child: const Icon(
@@ -29,8 +36,8 @@ class DestinationSearchListWidget extends StatelessWidget {
                 ),
               ),
               title: Text(destinationController.citiesSearchResult[index].name),
-              subtitle:
-                  Text(destinationController.citiesSearchResult[index].country),
+              subtitle: Text(
+                  destinationController.citiesSearchResult[index].country!),
             );
           },
           separatorBuilder: (BuildContext context, int index) {
